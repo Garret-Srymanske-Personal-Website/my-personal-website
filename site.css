@@ -46,6 +46,20 @@ main {
     float: right;
 }
 
+.directory a:hover {
+    animation-name: color-cycle;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes color-cycle {
+    0% { color: red; }
+    25% { color: green; }
+    50% { color: blue; }
+    75% { color: yellow; }
+    100% { color: purple; }
+}
+
 .directory a {
     text-decoration: none;
     color: inherit;
@@ -81,6 +95,64 @@ main {
     height: auto;
 }
 
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 50px) 120px;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.form-name, .email, .message, .name-input, .email-input {
+  font-size: 1.2rem;
+}
+
+.message-input {
+  font-size: 1.2rem;
+  resize: vertical;
+}
+
+button[type="submit"] {
+  padding: 10px;
+  font-size: 24px;
+  background-color: #979dac;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+    button {
+      width: 50%;
+      justify-self: center;
+    }
+
+    form {
+        padding-top: 190px;
+    }
+}
+
+button[type="submit"]:hover {
+  background-color: #1b4965;
+}
+
+label {
+  display: block;
+}
+
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  border: 2px solid black;
+  min-height: fit-content;
+  min-width: fit-content;
+}
+
 footer {
     text-align: center;
     background: #979dac;
@@ -88,5 +160,4 @@ footer {
 
 footer a {
     margin-left: 10px;
-
 }

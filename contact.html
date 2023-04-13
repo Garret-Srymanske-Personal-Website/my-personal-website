@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="site.css">
+    <title>Contact Me!</title>
+</head>
+<body>
+    <header>
+        <!-- Name -->
+        <div class="name">Garret Srymanske</div>
+        <!-- directory -->
+        <nav class="directory">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="portfolio.html">PORTFOLIO</a>
+            <a class="active" href="contact.html">CONTACT ME</a>
+        </nav>
+    </header>
+    <form id="contact-form" name="contact-form" action="https://formspree.io/f/xayzlpze" method="POST">
+            <label for="name" class="form-name">Full Name</label>
+            <input type="text" name="name" id="name" class="name-input" placeholder="First Last" required>
+            <label for="email" class="email">Email Address</label>
+            <input type="email" name="email" id="email" class="email-input" placeholder="Your Email" required>
+            <label for="message" class="message">Your Message</label>
+            <textarea area="5" name="message" id="message" class="message-input" placeholder="Your message" required></textarea>
+            <button type="submit" value="Submit">Submit</button>
+    </form>
+    <footer>
+        <a href="https://github.com/GDS598" target="_blank">
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="50" height="50">
+            </a>
+            
+            <a href="https://www.linkedin.com/in/garret598/" target="_blank">
+            <img src="https://static.vecteezy.com/system/resources/previews/009/097/186/original/blue-color-white-background-linkedin-design-logo-sign-symbol-free-vector.jpg" alt="LinkedIn" width="50" height="50">
+            </a>
+    </footer>
+</body>
+</html>
