@@ -16,12 +16,7 @@ header {
     padding: 20px 50px;
     box-shadow: 5px 2px 2px -5px black;
     background: #979dac;
-}
-
-header::after {
-    display: block;
-    clear: both;
-    content: '';
+    max-height: fit-content;
 }
 
 body {
@@ -64,6 +59,13 @@ main {
     text-decoration: none;
     color: inherit;
     margin-left: 5px;
+}
+
+@media screen and (max-width: 1020px) {
+    header {
+        font-size: 24px;
+        padding: 10px 25px;
+    }
 }
 
 .active {
@@ -133,8 +135,8 @@ button[type="submit"] {
       justify-self: center;
     }
 
-    form {
-        padding-top: 190px;
+    main, form {
+        padding-top: 100px;
     }
 }
 
